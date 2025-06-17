@@ -216,3 +216,23 @@ BEGIN
     DELETE FROM Appointments WHERE AppointmentId = @AppointmentId
 END
 GO
+
+-- Get All Appointments (Raw - for IRepository<Appointment>)
+CREATE PROC SP_GetAllAppointmentsRaw
+AS
+BEGIN
+    SELECT AppointmentId, DoctorId, PatientId, Date, Remarks
+    FROM Appointments
+END
+GO
+
+-- Get Appointment By Id (Raw - for IRepository<Appointment>)
+CREATE PROC SP_GetAppointmentByIdRaw
+@AppointmentId INT
+AS
+BEGIN
+    SELECT AppointmentId, DoctorId, PatientId, Date, Remarks
+    FROM Appointments
+    WHERE AppointmentId = @AppointmentId
+END
+GO
