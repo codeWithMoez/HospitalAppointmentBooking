@@ -6,7 +6,7 @@ namespace HospitalAppointmentBooking.Infrastructure.Data
 {
     public class DbHelper : IDbHelper
     {
-        private readonly string _connectionString;
+        private readonly string? _connectionString;
 
         public DbHelper(IConfiguration configuration)
         {
