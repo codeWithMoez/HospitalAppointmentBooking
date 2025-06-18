@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalAppointmentBooking.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/appointments")]
     [ApiController]
     public class AppointmentsController : ControllerBase
     {
