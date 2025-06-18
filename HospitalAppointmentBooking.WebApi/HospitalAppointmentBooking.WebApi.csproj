@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\HospitalAppointmentBooking.Application\HospitalAppointmentBooking.Application.csproj" />
+    <ProjectReference Include="..\HospitalAppointmentBooking.Domain\HospitalAppointmentBooking.Domain.csproj" />
   </ItemGroup>
 
 </Project>
