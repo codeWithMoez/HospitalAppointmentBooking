@@ -1,0 +1,119 @@
+﻿@page "/patients"
+@inject IServices<Patient> PatientService
+@rendermode InteractiveServer
+
+<h3 class="mb-4">Manage Patients</h3>
+
+<EditForm Model="patient" OnValidSubmit="HandleSubmit" FormName="PatientForm">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label class="form-label">Name</label>
+            <InputText class="form-control" @bind-Value="patient.Name" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <InputText class="form-control" @bind-Value="patient.Email" />
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2">@((isEditing ? "Update" : "Add") + " Patient")</button>
+    @if (isEditing)
+    {
+        <button type="button" class="btn btn-secondary" @onclick="ClearForm">Cancel</button>
+    }
+</EditForm>
+
+<hr />
+
+<h4>All Patients</h4>
+
+@if (patients == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th style="width: 150px;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in patients)
+                {
+                    <tr>
+                        <td>@p.Name</td>
+                        <td>@p.Email</td>
+                        <td>
+                            <button class="btn btn-sm btn-warning me-1" @onclick="() => Edit(p)">Edit</button>
+                            <button class="btn btn-sm btn-danger" @onclick="() => Delete(p.PatientId)">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    private List<Patient> patients = new();
+    private Patient patient = new();
+    private bool isEditing = false;
+
+    protected override void OnInitialized()
+    {
+        LoadPatients();
+    }
+
+    private void LoadPatients()
+    {
+        patients = PatientService.GetAll();
+    }
+
+    private void HandleSubmit()
+    {
+        if (isEditing)
+        {
+            PatientService.Update(patient);
+        }
+        else
+        {
+            PatientService.Add(patient);
+        }
+
+        ClearForm();
+        LoadPatients();
+    }
+
+    private void Edit(Patient p)
+    {
+        patient = new Patient
+            {
+                PatientId = p.PatientId,
+                Name = p.Name,
+                Email = p.Email
+            };
+
+        isEditing = true;
+    }
+
+    private void Delete(int id)
+    {
+        PatientService.Delete(id);
+        LoadPatients();
+    }
+
+    private void ClearForm()
+    {
+        patient = new Patient();
+        isEditing = false;
+    }
+}
