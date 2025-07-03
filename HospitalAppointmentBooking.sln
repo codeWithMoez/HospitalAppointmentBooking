@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalAppointmentBooking.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalAppointmentBooking.BlazorUI", "HospitalAppointmentBooking.BlazorUI\HospitalAppointmentBooking.BlazorUI.csproj", "{30802FAF-46A2-45F1-B197-BE390448801A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalAppointmentBooking.Blazor", "HospitalAppointmentBooking.Blazor\HospitalAppointmentBooking.Blazor.csproj", "{AE4FED8C-189A-4FEA-AC4A-7D75B44174EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{30802FAF-46A2-45F1-B197-BE390448801A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30802FAF-46A2-45F1-B197-BE390448801A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30802FAF-46A2-45F1-B197-BE390448801A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4FED8C-189A-4FEA-AC4A-7D75B44174EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4FED8C-189A-4FEA-AC4A-7D75B44174EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4FED8C-189A-4FEA-AC4A-7D75B44174EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4FED8C-189A-4FEA-AC4A-7D75B44174EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
