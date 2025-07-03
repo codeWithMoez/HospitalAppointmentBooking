@@ -1,6 +1,7 @@
 ﻿@page "/doctors"
 @inject IServices<Doctor> DoctorService
 @rendermode InteractiveServer
+@attribute [Authorize]
 
 <h3 class="mb-4">Manage Doctors</h3>
 
