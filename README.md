@@ -103,16 +103,17 @@ This project enables both patients and staff to view, create, update, and manage
 
 ---
 
-## 📂 Project Structure
-
 HospitalAppointmentBooking/
-├── HospitalAppointmentBooking.Blazor/      # Blazor Server App (Presentation Layer)
-├── HospitalAppointmentBooking.WebApi/      # RESTful API for Appointment Module
+├── HospitalAppointmentBooking.Blazor/ # Blazor Server App (Presentation Layer)
+├── HospitalAppointmentBooking.WebApi/ # RESTful API for Appointment Module
 ├── HospitalAppointmentBooking.Application/ # Business Logic Layer (BLL)
-├── HospitalAppointmentBooking.DataAccess/  # ADO.NET (DAL)
-├── HospitalAppointmentBooking.Domain/      # Entity Models
-├── HospitalAppointmentBooking.Infrastructure/ # Identity & Google Login
+├── HospitalAppointmentBooking.DataAccess/ # ADO.NET (DAL)
+├── HospitalAppointmentBooking.Domain/ # Entity Models
+├── HospitalAppointmentBooking.Infrastructure/ #Identity & Google Login
 └── README.md
+
+Copy
+Edit
 
 ## 📸 Screenshots
 
