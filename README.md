@@ -101,7 +101,7 @@ This project enables both patients and staff to view, create, update, and manage
     - Press F5 or the "Run" button to launch the application.
     - Navigate to `https://localhost:5001` (or the port shown in your launch settings).
 
----
+## 📂 Project Structure
 
 HospitalAppointmentBooking/
 ├── HospitalAppointmentBooking.Blazor/ # Blazor Server App (Presentation Layer)
@@ -111,9 +111,6 @@ HospitalAppointmentBooking/
 ├── HospitalAppointmentBooking.Domain/ # Entity Models
 ├── HospitalAppointmentBooking.Infrastructure/ #Identity & Google Login
 └── README.md
-
-Copy
-Edit
 
 ## 📸 Screenshots
 
