@@ -1,4 +1,4 @@
-````markdown
+
 # 🏥 Hospital Appointment Booking
 
 A full-featured **Blazor Server** application to manage hospital appointments, built with clean 3-tier architecture, SQL Server integration, and Google OAuth authentication.
@@ -142,4 +142,3 @@ A big thanks to all the tutorials and documentation that helped make this projec
 - ✉️ **Email**: your.email@example.com
 
 ⭐ Don’t forget to star the repo if you found this project helpful!
-```
