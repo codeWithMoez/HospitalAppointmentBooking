@@ -113,7 +113,6 @@ HospitalAppointmentBooking/
 ├── HospitalAppointmentBooking.Domain/      \# Entity Models
 ├── HospitalAppointmentBooking.Infrastructure/ \# Identity & Google Login
 └── README.md
----
 
 ## 📸 Screenshots
 
