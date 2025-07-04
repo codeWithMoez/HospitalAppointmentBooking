@@ -104,7 +104,6 @@ This project enables both patients and staff to view, create, update, and manage
 ---
 
 ## 📂 Project Structure
-````
 
 HospitalAppointmentBooking/
 ├── HospitalAppointmentBooking.Blazor/      \# Blazor Server App (Presentation Layer)
@@ -114,16 +113,39 @@ HospitalAppointmentBooking/
 ├── HospitalAppointmentBooking.Domain/      \# Entity Models
 ├── HospitalAppointmentBooking.Infrastructure/ \# Identity & Google Login
 └── README.md
-
-```
 ---
 
 ## 📸 Screenshots
 
+Here are some snapshots of the application in action.
+
+### Authentication & User Flow
+* **Login Page**: Users can sign in using their Google account.
+    ![Login Page](Screenshot/LoginPage.png)
+* **Registration Page**: New user details are captured upon first login.
+    ![Register Page](Screenshot/RegisterPage.png)
+* **Home Page (After Login)**: The main landing page after a user is authenticated.
+    ![Home Page After Login](Screenshot/AfterLogin.png)
+
+### Core Application Features
+* **Doctors Management**: View and manage the list of available doctors (CRUD).
+    ![Doctors Page](Screenshot/DoctorsPage.png)
+* **Patients Management**: View and manage the list of registered patients (CRUD).
+    ![Patients Page](Screenshot/PatientsPage.png)
+* **Appointments Dashboard**: View all scheduled appointments.
+    ![Appointments Page](Screenshot/AppointmentsPage.png)
+* **Booking an Appointment**: The form for creating a new appointment.
+    ![Booking Page](Screenshot/BookingPage.png)
+
+### Web API
+* **API Endpoints**: A look at the defined API endpoints for appointments.
+    ![API Endpoints](Screenshot/ApiEndpoints.png)
+* **API Testing**: Demonstrating a successful API call.
+    ![API Testing](Screenshot/TestingApi.png)
+
 #### 🔒 Google Login
 #### 👨‍⚕️ Doctor CRUD
 #### 📅 Appointment API
----
 
 ## 🙌 Acknowledgements
 - [Microsoft Docs – Blazor Server](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-7.0)
@@ -132,13 +154,12 @@ HospitalAppointmentBooking/
 
 A big thanks to all the tutorials and documentation that helped make this project possible!
 
----
 
 ## 📬 Contact
 
 **Moeiz**
 
 - 🔗 **GitHub**: [@codeWithMoez](https://github.com/codeWithMoez)
-- ✉️ **Email**: your.email@example.com
+- ✉️ **Email**: 221073@students.au.edu.pk
 
 ⭐ Don’t forget to star the repo if you found this project helpful!
